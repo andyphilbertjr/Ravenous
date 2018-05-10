@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react'
 import Yelp from '/Users/owner/Desktop/Projects/ravenous/src/util/yelp.js'
-import '/Users/owner/Desktop/Projects/ravenous/src/components/App/App.css';
-import BusinessList from '../BusinessList/BusinessList';
-import SearchBar from '../SearchBar/SearchBar';
+import '/Users/owner/Desktop/Projects/ravenous/src/components/App/App.css'
+import BusinessList from '../BusinessList/BusinessList'
+import SearchBar from '../SearchBar/SearchBar'
 
 
 class App extends React.Component{
@@ -22,7 +22,7 @@ class App extends React.Component{
   }
   render() {
     return (
-      <div classNAme="App">
+      <div className="App">
         <h1>ravenous</h1>
         <SearchBar searchYelp={this.searchYelp}/>
         <BusinessList businesses={this.state.businesses}/>
